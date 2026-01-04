@@ -18,7 +18,9 @@
 
 <div class="page">
   <Header />
-  {@render children()}
+  <main class="content">
+    {@render children()}
+  </main>
   <Footer />
 </div>
 
@@ -38,5 +40,9 @@
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+  }
+
+  .content {
+    flex: 1;
   }
 </style>
