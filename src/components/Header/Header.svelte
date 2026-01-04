@@ -37,6 +37,7 @@
     font-size: 4em;
     font-weight: 900;
     letter-spacing: -0.05em;
+    text-align: center;
   }
 
   nav {
@@ -44,6 +45,7 @@
   }
 
   .navLinks {
+    justify-content: space-evenly;
     font-size: 1.5em;
     font-weight: 600;
     letter-spacing: 0.01em;
