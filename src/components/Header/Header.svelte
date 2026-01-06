@@ -1,4 +1,4 @@
-<div class="grid">
+<div class="top grid">
   <header>
     <h1>selinux</h1>
   </header>
@@ -24,6 +24,10 @@
 </div>
 
 <style>
+  .top {
+    width: 75vw;
+    align-self: center;
+  }
   .grid {
     display: flex;
     gap: 1em;
@@ -37,7 +41,6 @@
     font-size: 4em;
     font-weight: 900;
     letter-spacing: -0.05em;
-    text-align: center;
   }
 
   nav {
