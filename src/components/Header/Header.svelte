@@ -5,19 +5,25 @@
   <nav>
     <ul class="navLinks grid">
       <li>
-        <a href="/" aria-label="home-link">home</a>
+        <a href="/" aria-label="home-link" class="nav-link">home</a>
       </li>
       <li>
-        <a href="/about" aria-label="about-me-page-link">about me</a>
+        <a href="/about" aria-label="about-me-page-link" class="nav-link"
+          >about me</a
+        >
       </li>
       <li>
-        <a href="photos" aria-label="photos-page-link">photos</a>
+        <a href="photos" aria-label="photos-page-link" class="nav-link"
+          >photos</a
+        >
       </li>
       <li>
-        <a href="/blog" aria-label="blog-link">blog</a>
+        <a href="/blog" aria-label="blog-link" class="nav-link">blog</a>
       </li>
       <li>
-        <a href="/credits" aria-label="credits-page-link">credits</a>
+        <a href="/credits" aria-label="credits-page-link" class="nav-link"
+          >credits</a
+        >
       </li>
     </ul>
   </nav>
@@ -25,11 +31,13 @@
 
 <style>
   .top {
-    width: 75vw;
-    align-self: center;
+    font-size: 0.5em;
+    align-self: stretch;
+    text-transform: uppercase;
   }
   .grid {
     display: flex;
+    flex-flow: row nowrap;
     gap: 1em;
   }
 
@@ -38,20 +46,28 @@
   }
 
   h1 {
-    font-size: 4em;
+    text-align: center;
     font-weight: 900;
-    letter-spacing: -0.05em;
   }
 
   nav {
-    flex: 2;
+    flex: 5;
   }
 
   .navLinks {
     justify-content: space-evenly;
     font-size: 1.5em;
-    font-weight: 600;
+    font-weight: 700;
     letter-spacing: 0.01em;
     list-style-type: none;
+  }
+
+  h1,
+  .navLinks {
+    letter-spacing: 0.1em;
+  }
+
+  .nav-link {
+    text-decoration: none;
   }
 </style>

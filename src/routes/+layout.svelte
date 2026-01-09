@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
     rel="stylesheet"
   />
 </svelte:head>
@@ -24,25 +24,28 @@
   <Footer />
 </div>
 
-<style>
+<style lang="scss">
   /* normalize for reseting elements */
   @import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+  @use "../styles/base" as *;
 
   /* page class w/ flex */
   .page {
-    display: inline-flex;
+    display: flex;
     height: 100vh;
     width: 100%;
-    background-color: red;
+    background-color: $primary;
     font-size: 14px;
     flex-flow: column nowrap;
-    font-family: "Mulish", sans-serif;
+    font-family: "Azeret Mono", monospace;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    margin: 0 auto;
   }
 
   .content {
     flex: 1;
+    align-self: center;
   }
 </style>

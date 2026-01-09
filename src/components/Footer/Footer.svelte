@@ -5,6 +5,9 @@
 </div>
 
 <style>
+  footer {
+    font-family: "Mulish", sans-serif;
+  }
   p {
     font-size: 0.8em;
     font-weight: 800;
