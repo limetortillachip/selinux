@@ -5,13 +5,11 @@
 </div>
 
 <style>
-  footer {
-    font-family: "Mulish", sans-serif;
-  }
   p {
-    font-size: 0.8em;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
+    font-size: 0.7em;
+    font-weight: 600;
+    text-transform: lowercase;
+    letter-spacing: 0.08em;
+    text-align: center;
   }
 </style>

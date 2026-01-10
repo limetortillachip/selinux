@@ -7,11 +7,7 @@
       <li>
         <a href="/" aria-label="home-link" class="nav-link">home</a>
       </li>
-      <li>
-        <a href="/about" aria-label="about-me-page-link" class="nav-link"
-          >about me</a
-        >
-      </li>
+
       <li>
         <a href="photos" aria-label="photos-page-link" class="nav-link"
           >photos</a
@@ -31,9 +27,10 @@
 
 <style>
   .top {
-    font-size: 0.5em;
+    font-size: 0.75em;
     align-self: stretch;
-    text-transform: uppercase;
+    text-transform: lowercase;
+    align-items: center;
   }
   .grid {
     display: flex;
@@ -47,7 +44,7 @@
 
   h1 {
     text-align: center;
-    font-weight: 900;
+    font-weight: 800;
   }
 
   nav {
@@ -64,7 +61,7 @@
 
   h1,
   .navLinks {
-    letter-spacing: 0.1em;
+    letter-spacing: 0.05em;
   }
 
   .nav-link {
