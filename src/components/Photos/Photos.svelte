@@ -24,14 +24,29 @@
     const getPhotos = () => {
         const photosList = [];
 
+        /*
+            forEach item in imagesList, create image Obj:
+                1. each item is the url to library
+                2. id from index in list
+                3. alt text from image name by slicing the directory names off and replacing dashes with spaces
+            each image Obj is added to photoList Array 
+            */
         imagesList.forEach((x, i) => {
             const image = Object.create(img);
 
-            image.url = x;
-            console.log(image.url);
-            image.alt = x.slice(23, -4).replaceAll("-", " ");
-            console.log(image.alt);
+            //create image ID
             image.id = i + 1;
+
+            //url is from imported file location
+            image.url = x;
+            //console.log(image.url);
+
+            //create alt text by removing directory names
+            //and replacing dashes with spaces
+            image.alt = x.slice(23, -4).replaceAll("-", " ");
+            //console.log(image.alt);
+
+            //add each image Obj to photoList Array
             photosList.push(image);
         });
 
