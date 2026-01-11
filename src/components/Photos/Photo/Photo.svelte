@@ -1,14 +1,22 @@
 <script>
-    let caption = "caption here";
+    let { url, alt } = $props();
+    let caption = "caption here!";
 </script>
 
 <article>
     <div class="photo">
         <div id="img">
-            <img src="/" alt="element" />
+            <img src={url} {alt} />
         </div>
         <div class="caption">
             <p>{caption}</p>
         </div>
     </div>
 </article>
+
+<style>
+    img {
+        width: 100%;
+        height: auto;
+    }
+</style>
