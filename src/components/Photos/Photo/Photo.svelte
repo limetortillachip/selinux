@@ -3,18 +3,20 @@
     let caption = "caption here!";
 </script>
 
-<article>
-    <div class="photo">
-        <div id="img">
-            <img src={url} {alt} />
-        </div>
-        <div class="caption">
-            <p>{caption}</p>
-        </div>
+<div class="photo">
+    <div id="img">
+        <img src={url} {alt} />
     </div>
-</article>
+    <div class="caption">
+        <p>{caption}</p>
+    </div>
+</div>
 
 <style>
+    .photo {
+        flex: 1;
+    }
+
     img {
         width: 100%;
         height: auto;

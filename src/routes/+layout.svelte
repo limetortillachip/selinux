@@ -46,6 +46,7 @@
     font-weight: 400;
     font-style: normal;
     margin: 0 auto;
+    overflow: scroll;
   }
 
   .grid {
