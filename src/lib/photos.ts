@@ -1,3 +1,18 @@
+//import images from folder
+const images = import.meta.glob("$lib/assets/images/*.png", {
+    eager: true,
+    import: "default",
+    });
+
+//array from imported images
+const imagesList: Array<unknown> = Object.values(images);
+//console.log(imagesList);
+
+//images directory
+const imagesDir = "/src/lib/asses/images/";
+//console.log(imagesDir);
+
+//Photo Obj configuration
 class Photo {
     url: string;
     alt: string;
@@ -21,20 +36,6 @@ class Photo {
         this.alt = alt;
     }
 }
-
-//import images from folder
-const images = import.meta.glob("$lib/assets/images/*.png", {
-    eager: true,
-    import: "default",
-    });
-
-//array from imported images
-const imagesList: Array<unknown> = Object.values(images);
-console.log(imagesList);
-
-//images directory
-const imagesDir = "/src/lib/asses/images/";
-//console.log(imagesDir);
 
 export const getPhotos = () => {
     let photos = [];

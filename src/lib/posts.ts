@@ -1,15 +1,11 @@
-interface Data {
-    body: string | Array <{}> | false;
-}
-
 class Post {
     id: number;
     title: string;
-    text: Data;
-    photos: Data;
+    text: Array<any>;
+    photos: Array<any>;
     date: string;
 
-    constructor(id: number, title: string, text: Data, photos: Data, date: string) {
+    constructor(id: number, title: string, text: Array<any>, photos: Array<any>, date: string) {
         this.id = id;
         this.title = title;
         this.text = text;
@@ -22,4 +18,14 @@ class Post {
 
         return postDate.toLocaleDateString();
     }
+}
+
+export const getPosts = (posts: Array<any>) => {
+    let postsList = [];
+
+    posts.map((post, index)  =>{
+        let newPost = new Post((index+1), post.title, post.body, post.images.keys,post.date)
+        postsList.push(newPost);
+    })
+    return postsList;
 }

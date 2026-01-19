@@ -1,24 +1,6 @@
 <script lang="ts">
     import Hero from "../components/Hero/Hero.svelte";
-    import { getPhotos } from "$lib/photos";
 
-    const photos = getPhotos();
-
-    let random : Number = Math.floor(Math.random() * (photos.length)+1);
-    console.log(random);
-
-    console.log(photos);
-
-   let randomPhoto = photos.filter((item) => {
-        if (item.id === random) {
-            return item
-        }
-        else {
-            return null
-        }
-   })
-
-   console.log(randomPhoto);
 </script>
 
 <article class="grid homepage">
@@ -26,10 +8,7 @@
         <Hero />
     </div>
     <div>
-        <div class="pic">
-            <img src={randomPhoto[0].url}
-             alt={randomPhoto[0].alt}/>
-        </div>
+        
     </div>
 
     <div class="projects">
