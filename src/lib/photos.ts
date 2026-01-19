@@ -22,42 +22,30 @@ class Photo {
     }
 }
 
-interface Data {
-    body: string | Array <{}> | false;
-}
+//import images from folder
+const images = import.meta.glob("$lib/assets/images/*.png", {
+    eager: true,
+    import: "default",
+    });
 
-class Post {
-    id: number;
-    title: string;
-    text: Data;
-    photos: Data;
-    date: string;
+//array from imported images
+const imagesList: Array<unknown> = Object.values(images);
+console.log(imagesList);
 
-    constructor(id: number, title: string, text: Data, photos: Data, date: string) {
-        this.id = id;
-        this.title = title;
-        this.text = text;
-        this.photos = photos;
-        this.date = date;
-    }
+//images directory
+const imagesDir = "/src/lib/asses/images/";
+//console.log(imagesDir);
 
-    makePostDate () {
-        let postDate = new Date(this.date);
-
-        return postDate.toLocaleDateString();
-    }
-}
-
-export const getPhotos = (images: Array<unknown>, dir: string) => {
+export const getPhotos = () => {
     let photos = [];
     
-    if (images.length > 0) {
+    if (imagesList.length > 0) {
     
-    images.map((item, i)=>{
+    imagesList.map((item, i)=>{
         //console.log(item, i);
         const photoObj = new Photo(item, "", 0);
         photoObj.setId(i + 1);
-        photoObj.setImgAlt(dir);
+        photoObj.setImgAlt(imagesDir);
         photos.push(photoObj);
     })
 

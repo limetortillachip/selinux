@@ -2,22 +2,8 @@
     import { getPhotos } from "$lib/photos";
     import Photo from "./Photo/Photo.svelte";
 
-    //import images from folder
-    const images = import.meta.glob("$lib/assets/images/*.png", {
-        eager: true,
-        import: "default",
-    });
-
-    //array from imported images
-    const imagesList: Array<unknown> = Object.values(images);
-    console.log(imagesList);
-
-    //images directory
-    const imagesDir = "/src/lib/asses/images/";
-    //console.log(imagesDir);
-
     //photos fx returns array with list of img objs from import
-    const photos = getPhotos(imagesList, imagesDir);
+    const photos = getPhotos();
 
     console.log(photos);
 </script>
