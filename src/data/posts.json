@@ -1,11 +1,11 @@
 [
     {
-        "title": "My 3rd New York Trip Ever!",
+        "title": "My 3rd New York City Trip Ever!",
         "body":[
-            "New York is noisy! Oh my god? I had no idea how overstimulating that could be. I also did not pack my camera charger for this trip. The few shots I took captured the stillness of the buildings and movement of the habitants of New York City."   
+            "New York is noisy! Oh my god? I had no idea how overstimulating that could be. I also did not pack my camera charger for this trip. The few shots I took captured the stillness of the buildings and movement of the habitants in New York City."   
         ],
-        "images": {
-            "keys": [1, 2, 3, 4, 5, 6, 7, 8]
+        "coverPhoto": {
+            "key": [11]
         },
         "date": "December 2025"
     }

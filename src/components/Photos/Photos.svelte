@@ -2,7 +2,7 @@
     import { getPhotos } from "$lib/photos";
     import Photo from "./Photo/Photo.svelte";
 
-    //photos fx returns array with list of img objs from import
+    //photos fx returns array with list of img objs from folder
     const photos = getPhotos();
 
     console.log(photos);
@@ -26,7 +26,7 @@
     }
 
     .img {
-        width: 33%;
+        width: 45%;
         flex: 1 1 auto;
         align-items: flex-end;
     }

@@ -7,13 +7,12 @@
     const postsList = getPosts(postData);
     const photosList = getPhotos();
 
-    postsList.map((post, i)=> {
-        let images = []
+    postsList.map((post)=> {
+        let image = []
         photosList.forEach((photo) => {
-            post.photos.includes(photo.id) ? images.push(photo): null;
+            post.coverPhoto.includes(photo.id) ? image.push(photo): null;
         })
-
-        post.photos = images;
+        post.coverPhoto = image;
     })
 
     console.log(postsList);
@@ -22,5 +21,7 @@
 </script>
 
 <article class="posts">
-    <Post />
+    {#each postsList as post}
+    <Post title={post.title} text={post.text} date={post.date} coverPhoto={post.coverPhoto}/>
+    {/each}
 </article>
