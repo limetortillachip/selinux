@@ -21,13 +21,15 @@
         display: flex;
     }
     .photos {
+        background-color: bisque;
         flex-flow: row wrap;
+        justify-content: space-evenly;
+        align-items: center;
         gap: 1em;
     }
 
     .img {
-        width: 45%;
-        flex: 1 1 auto;
+        flex: 40% 1;
         align-items: flex-end;
     }
 </style>

@@ -55,8 +55,6 @@
 
   .content {
     flex: 1;
-    width: 90vw;
-    background-color: red;
-    align-self: center;
+    background-color: grey;
   }
 </style>

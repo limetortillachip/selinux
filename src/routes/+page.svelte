@@ -7,8 +7,7 @@
     <div class="hero grid">
         <Hero />
     </div>
-    <div>
-        
+    <div>   
     </div>
 
     <div class="projects">
@@ -21,12 +20,10 @@
 </article>
 
 <style>
-
-    img {
-        width: 100%;
-        height: auto;
-    }
     .homepage {
+        flex: 75% 0;
+        margin: 0 auto;
+        background-color: orange;
         padding: 1em;
         flex-flow: column nowrap;
     }

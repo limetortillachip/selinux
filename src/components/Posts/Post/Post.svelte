@@ -17,12 +17,12 @@
         <div class="post-body">
             <p>{text}</p>
         </div>
+    </div>
         <div class="date">
             <p id="datetime">
                 <time datetime={date}>{date}</time>
             </p>
         </div>
-    </div>
 </article>
 
 
@@ -50,5 +50,6 @@
 
     .post-text {
         flex: 1;
+        font-family: 'Mulish', sans-serif;
     }
 </style>

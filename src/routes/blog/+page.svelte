@@ -10,3 +10,13 @@
         <Posts />
     </div>
 </div>
+
+<style>
+    .blog {
+        background-color: darkorchid;
+        flex: 50% 0;
+        margin: 0 auto;
+        height: auto;
+        padding: 2em;
+    }
+</style>
