@@ -9,7 +9,7 @@
       </li>
 
       <li>
-        <a href="photos" aria-label="photos-page-link" class="nav-link"
+        <a data-sveltekit-preload-code="eager" href="photos" aria-label="photos-page-link" class="nav-link"
           >photos</a
         >
       </li>

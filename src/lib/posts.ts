@@ -14,9 +14,8 @@ class Post {
     }
 
     makePostDate () {
-        let postDate = new Date(this.date);
-
-        return postDate.toLocaleDateString();
+        let postDate = new Date(this.date).toLocaleDateString();
+        this.date = postDate;
     }
 }
 
@@ -25,6 +24,7 @@ export const getPosts = (posts: Array<any>) => {
 
     posts.map((post, index)  =>{
         let newPost = new Post((index+1), post.title, post.body, post.coverPhoto.key,post.date)
+        newPost.makePostDate();
         postsList.push(newPost);
     })
     return postsList;

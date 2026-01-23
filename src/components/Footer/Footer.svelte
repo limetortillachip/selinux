@@ -8,7 +8,7 @@
   p {
     font-size: 0.7em;
     font-weight: 600;
-    text-transform: lowercase;
+    text-transform: uppercase;
     letter-spacing: 0.08em;
     text-align: center;
   }

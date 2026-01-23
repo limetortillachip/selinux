@@ -8,6 +8,9 @@
                 {#each coverPhoto as photo}
                     <img src={photo.url} alt={photo.alt} />
                 {/each}</div>
+                <div class="photos-link">
+                    <a href="/photos/nyc" id="cover-link">View all photos from New York City.</a>
+                </div>
         </div>
 
     <div class="post-text">
@@ -27,8 +30,17 @@
 
 
 <style>
+    #cover-link {
+        font-size: 0.8em;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
     img{
         width: 100%;
+    }
+    .cover {
+        flex-flow: column nowrap;
+        align-items: flex-end;
     }
 
     .grid {

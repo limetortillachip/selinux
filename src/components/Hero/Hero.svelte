@@ -1,4 +1,3 @@
-<h2 id="hero-title">Welcome to my page!</h2>
 <div class="grid creator">
     <div class="creatorImg">
         <i class="ph-fill ph-user-circle dev-icon"></i>
@@ -12,9 +11,9 @@
 </div>
 
 <style>
-    #hero-title {
-        text-transform: uppercase;
-        font-size: 1.25em;
+    #desc {
+        line-height: 150%;
+        font-size: 0.85em;
     }
     .grid {
         display: flex;
@@ -22,10 +21,12 @@
     }
 
     .creator {
+        flex: 1;
         background-color: aliceblue;
     }
 
     .creatorBlurb {
+        background-color: #fff3f2;
         flex: 2;
         padding-inline: 0.5em;
     }
@@ -39,7 +40,4 @@
         font-size: 2em;
     }
 
-    #desc {
-        font-size: 0.85em;
-    }
 </style>
